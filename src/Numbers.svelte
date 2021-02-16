@@ -1,4 +1,5 @@
 <script>
+
     import HoverButton from './HoverButton.svelte'
     import End from './End.svelte'
 
@@ -21,15 +22,21 @@
 </script>
 
 <div class="math">
-    {#if end == false}
-    <p>Vad blir summan?</p>
-    <span>{a} + {b}</span>
-    <input type="number" bind:value={userInput} placeholder="Fyll i svar här">
 
-    {#if userInput == total}
-    <HoverButton on:click={theEnd}/>
+    <!-- This shows until the right answer is in the input, when "end" is true it hides -->
+    {#if end == false}
+
+        <p>Vad blir summan?</p>
+        <span>{a} + {b}</span>
+        <input type="number" bind:value={userInput} placeholder="Fyll i svar här">
+
+        {#if userInput == total}
+            <HoverButton on:click={theEnd}/>
+        {/if}
+
     {/if}
-    {/if}
+
+    <!-- When the button is clicked the endscreen is showned -->
     {#if !end == false}
     <End />
     {/if}

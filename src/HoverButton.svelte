@@ -1,6 +1,6 @@
 
+<!-- This is the main button type that can be re-used -->
 <style>
-
     button {
         margin-top: 1.5rem;
         background-color: white;
@@ -20,4 +20,5 @@
 
 </style>
 
+<!-- The basic button that is clickable with function callback at the page it is on -->
 <button on:click>Fortsätt</button>
