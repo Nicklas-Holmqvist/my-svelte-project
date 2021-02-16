@@ -9,7 +9,7 @@
 		return Math.ceil(Math.random()*20)
 	}
 
-    function end(){
+    function theEnd(){
         end = true;
     }
 
@@ -21,12 +21,14 @@
 </script>
 
 <div class="math">
+    {#if end == false}
     <p>Vad blir summan?</p>
     <span>{a} + {b}</span>
     <input type="number" bind:value={userInput} placeholder="Fyll i svar här">
 
     {#if userInput == total}
-    <HoverButton on:click={end}/>
+    <HoverButton on:click={theEnd}/>
+    {/if}
     {/if}
     {#if !end == false}
     <End />

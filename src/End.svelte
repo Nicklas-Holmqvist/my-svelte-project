@@ -1,11 +1,11 @@
 <div class="end">
-    <h1>Tack för du var med o spela!</h1>
+    <h1>Tack för du var med och spela!</h1>
 </div>
 
 <style>
     	h1 {
 		padding: .5rem 0;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: 400;
 	}
 

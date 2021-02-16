@@ -1,8 +1,9 @@
 <script>
     export let name=''
+    export let greeting='Hej'
 </script>
 
-<h2>Hej {name}!</h2>
+<h2>{greeting} {name}!</h2>
 
 <style>
     
