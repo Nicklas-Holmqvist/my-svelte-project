@@ -1,11 +1,11 @@
 <script>
-	
+	import { fade } from 'svelte/transition';
 	import Name from './Name.svelte'
 	import HoverButton from './HoverButton.svelte'
 	import Numbers from './Numbers.svelte'
 	
 	//username
-	let name = '';
+	export let name = '';
 
 	//an boolean to check if you have clicked the button to start the app
 	let start = true;
@@ -20,7 +20,7 @@
 </script>
 
 <main>
-	<div class="app-container">
+	<div class="app-container" transition:fade>
 		<!-- an if-statement that hides this html code inside if /if when the button is pushed -->
 		{#if start == true}
 			<h1>Hej!</h1>
@@ -29,14 +29,12 @@
 
 			<!-- button that shows when a user make an input, and dissapear when blank -->
 			{#if !name== ''}
-				<HoverButton on:click={begin} />
+				<HoverButton on:click={begin} btnText='Fortsätt' />
 			{/if}
 
 		<!-- if button is pressed show this -->
-		{:else}
-			<Name name={name} />
-			<Numbers />
-
+		{:else}			
+			<Numbers name={name}/>
 		<!-- end of if-statement -->
 		{/if}
 	</div>
@@ -55,6 +53,7 @@
 		align-items: center;
 		width: 100%;
 		height: 100%;
+		background-color: #F9F9F9;
 	}
 
 	h1 {

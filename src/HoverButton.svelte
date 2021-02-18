@@ -1,3 +1,6 @@
+<script>
+    export let btnText;
+</script>
 
 <!-- This is the main button type that can be re-used -->
 <style>
@@ -21,4 +24,4 @@
 </style>
 
 <!-- The basic button that is clickable with function callback at the page it is on -->
-<button on:click>Fortsätt</button>
+<button on:click>{btnText}</button>
