@@ -20,26 +20,26 @@
 </script>
 
 <main>
+	<div class="app-container">
+		<!-- an if-statement that hides this html code inside if /if when the button is pushed -->
+		{#if start == true}
+			<h1>Hej!</h1>
+			<h2>Vad heter du?</h2>
+			<input type="text" bind:value={name} placeholder='Fyll i här'>
 
-	<!-- an if-statement that hides this html code inside if /if when the button is pushed -->
-	{#if start == true}
-		<h1>Hej!</h1>
-		<h2>Vad heter du?</h2>
-		<input type="text" bind:value={name} placeholder='Fyll i här'>
+			<!-- button that shows when a user make an input, and dissapear when blank -->
+			{#if !name== ''}
+				<HoverButton on:click={begin} />
+			{/if}
 
-		<!-- button that shows when a user make an input, and dissapear when blank -->
-		{#if !name== ''}
-			<HoverButton on:click={begin} />
+		<!-- if button is pressed show this -->
+		{:else}
+			<Name name={name} />
+			<Numbers />
+
+		<!-- end of if-statement -->
 		{/if}
-
-	<!-- if button is pressed show this -->
-	{:else}
-		<Name name={name} />
-		<Numbers />
-
-	<!-- end of if-statement -->
-	{/if}
-
+	</div>
 </main>
 
 <style>
@@ -53,9 +53,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
 		width: 100%;
-		height: 40rem;
+		height: 100%;
 	}
 
 	h1 {
@@ -68,6 +67,15 @@
 		padding: 1.5rem 0;
         font-size: 2.5rem;
         font-weight: 300;
+	}
+
+	.app-container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+		height: 30rem;
+		margin: 0 auto;
 	}
 
 	input {
