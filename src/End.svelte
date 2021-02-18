@@ -7,6 +7,12 @@
 		padding: .5rem 0;
         font-size: 4rem;
         font-weight: 400;
+
+        @media (max-width: 20em) {
+            h1 {
+                font-size: 2rem
+            }
+        }
 	}
 
 </style>

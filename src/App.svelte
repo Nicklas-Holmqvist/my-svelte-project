@@ -55,7 +55,7 @@
 		align-items: center;
 		flex-direction: column;
 		width: 100%;
-		height: 60rem;
+		height: 40rem;
 	}
 
 	h1 {
