@@ -25,4 +25,10 @@ Det finns riktigt mycket funktioner som man kan använda men de här delarna anv
 * Kör sedan "npm run dev"
 * Gå till [localhost:5000](http://localhost:5000/) för att få en liveview
 
+## Om du redan har filerna på datorn
+* Öppna upp terminalen i VSC
+* Kör kommandot "npm install"
+* Kör sedan "npm run dev"
+* Gå till [localhost:5000](http://localhost:5000/) för att få en liveview
+
 *Notera att [Node.js](https://nodejs.org) måste vara installerat.*
