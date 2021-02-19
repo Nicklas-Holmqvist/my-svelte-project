@@ -1,6 +1,5 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import Name from './Name.svelte'
 	import HoverButton from './HoverButton.svelte'
 	import Numbers from './Numbers.svelte'
 	
@@ -73,7 +72,7 @@
 		justify-content: flex-start;
 		align-items: center;
 		flex-direction: column;
-		height: 30rem;
+		height: 25rem;
 		margin: 0 auto;
 	}
 

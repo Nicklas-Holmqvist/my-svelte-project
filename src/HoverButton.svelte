@@ -23,5 +23,5 @@
 
 </style>
 
-<!-- The basic button that is clickable with function callback at the page it is on -->
+<!-- The basic button that is clickable with function callback and buttontext at the page it is on -->
 <button on:click>{btnText}</button>

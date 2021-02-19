@@ -19,7 +19,7 @@
     <h1 style="font-size: {smallH1}rem">Tack {name} för du var med och spela!</h1>
 
     {/if}
-    <HoverButton on:click={restart} btnText='Starta om'/>
+    <HoverButton on:click={restart} btnText='Till början'/>
     
 </div>
 
