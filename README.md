@@ -15,7 +15,7 @@ Det finns riktigt mycket funktioner som man kan använda men de här delarna anv
 * Ett objekt för "Hej {namn}!"
 * Ett objekt för matematiska uträkningen
 * Ett objekt för "Tack för du spelade" + starta om knapp
-* Importerat trasistion fade från svelte som körs på alla stora divs
+* Importerat transistion fade från svelte som körs på alla stora divs
 
 ## Klona ner och komma igång
 * Kopiera HTTPS länken i detta Repot eller kopiera denna länken: https://github.com/Nicklas-Holmqvist/my-svelte-project.git
