@@ -3,10 +3,10 @@
     export let greeting='Hej'
 </script>
 
+<!-- greeting and name component -->
 <h2>{greeting} {name}!</h2>
 
-<style>
-    
+<style>    
 	h2 {
 		padding: 0 0;
         font-size: 2.5rem;

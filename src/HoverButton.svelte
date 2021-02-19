@@ -2,7 +2,7 @@
     export let btnText;
 </script>
 
-<!-- This is the main button type that can be re-used -->
+<!-- This is the main button type that can be re-used width the same styling -->
 <style>
     button {
         margin-top: 1.5rem;

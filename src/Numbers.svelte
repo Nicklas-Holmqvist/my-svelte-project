@@ -8,10 +8,12 @@
     let userInput = '';
     let end = false;
 
+    /** creates an randomnumber */
     function random() {
 		return Math.ceil(Math.random()*20)
 	}
 
+    /** function to go to endscene */
     function theEnd(){
         end = true;
     }
@@ -45,33 +47,27 @@
     
 </div>
 
-<style>
-    
+<style>    
     * {
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
 	}
-
     .math {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
-
     p {
         font-size: 1.5rem;
         text-align: center;
     }
-
 	span {
 		text-align: center;
         font-size: 1.5rem;
         padding: 2rem
 	}
-
     input {
 		border: none;
 		border-bottom: 1px black solid;
@@ -83,7 +79,6 @@
 		font-size: 1.5rem;
 		transition: all 0.2s ease-in-out;		
 	}
-
 	input:hover {
 		background: hsla(0, 0%, 0%, 0.01);		
 	}
